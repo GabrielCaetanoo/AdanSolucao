@@ -14,8 +14,8 @@ type ProductsProps = {
 };
 
 const Products: React.FC<ProductsProps> = ({ addToCart }) => (
-  <div>
-    <h1>Products</h1>
+  <div color='white'>
+    
     <ItemList addToCart={addToCart} />
   </div>
 );

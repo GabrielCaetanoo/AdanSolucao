@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import backgroundImage from '../src/assets/images/background.avif'; // Importe uma imagem de fundo ou destaque
-
+import backgroundImage from '../src/assets/images/background.jpg';
+import {CartButton} from '../src/styled'
 
 const HomeContainer = styled.div`
   position: relative; /* Tornar o posicionamento relativo para que o z-index funcione */
@@ -11,11 +11,15 @@ const HomeContainer = styled.div`
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
+  margin-top: 30px;
+  border: 2px solid #ccc; /* Adicione uma borda de 2px sólida com a cor cinza */
+  border-radius: 10px; /* Adicione uma borda arredondada com raio de 10px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adicione uma sombra sutil */
 `;
 
 const Title = styled.h1`
   font-size: 2.5em;
-  color: black;
+  color: white;
   margin-bottom: 20px;
   position: relative; /* Tornar o posicionamento relativo */
   z-index: 1; /* Garantir que o título fique na frente do background */
@@ -23,15 +27,18 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
   font-size: 1.2em;
-  color: grey;
-  margin-bottom: 40px;
+  color: white;
+  margin-bottom: 15px;
   position: relative; /* Tornar o posicionamento relativo */
   z-index: 1; /* Garantir que o subtítulo fique na frente do background */
 `;
 
 const HighlightSection = styled.div`
   background-color: #f9f9f9;
-  padding: 50px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  margin: 20px 0; /* Adiciona margem ao redor do container */
 `;
 
 const HighlightTitle = styled.h2`
@@ -68,9 +75,11 @@ const Home: React.FC = () => (
     <HomeContainer>
       <Title>Bem-vindo à Loja</Title>
       <Subtitle>Clique para ver os Produtos</Subtitle>
+      <CartButton>
       <Link to="/products">
         <button>Explorar Produtos</button>
       </Link>
+      </CartButton>
     </HomeContainer>
     <HighlightSection>
       <HighlightTitle>Destaques</HighlightTitle>

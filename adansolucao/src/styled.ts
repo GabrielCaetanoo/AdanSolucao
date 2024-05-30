@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: rgba(30,30,30);
   }
 `;
 
@@ -77,12 +77,15 @@ export const CartButton = styled.button`
   }
 `;
 
+// Container principal da página
 export const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Tornando o container principal do mesmo tamanho da tela */
 `;
 
+// Container para a lista de itens
 export const ItemListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -91,23 +94,44 @@ export const ItemListContainer = styled.div`
   justify-content: center;
 `;
 
+// Container para o título dos produtos
+export const TitleContainer = styled.div`
+  background-color: white; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  margin-top: 20px; /* Margem superior */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  margin-bottom: 20px; /* Margem inferior */
+`;
+
+// Título dos produtos
+export const Title = styled.h2`
+  color: black; /* Cor do texto */
+  margin: 0; /* Removendo margem padrão */
+  text-align: center; /* Centralizando o texto */
+`;
+
+// Container para cada item
 export const ItemContainer = styled.div`
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Borda sólida cinza claro */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  width: 200px; /* Largura fixa */
+  text-align: center; /* Centralizando o conteúdo */
+  background-color: white; /* Cor de fundo branca */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 `;
 
+// Nome do item
 export const ItemName = styled.h2`
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.2em; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Margem inferior */
 `;
 
+// Preço do item
 export const ItemPrice = styled.p`
-  font-size: 1em;
-  color: #333;
+  font-size: 1em; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
 `;
 
 export const CartContainer = styled.div`
@@ -166,6 +190,9 @@ export const CheckoutContainer = styled.div`
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+  border-radius: 10px; /* Deixa as bordas mais arredondadas */
 `;
 
 export const PaymentOption = styled.div`
