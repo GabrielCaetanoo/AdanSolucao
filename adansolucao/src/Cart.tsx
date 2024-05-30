@@ -21,7 +21,7 @@ type CartProps = {
           {items.map((item) => (
             <CartItem key={item.id}>
               {item.name} - R$ {item.price.toFixed(2)}
-              <RemoveButton onClick={() => removeFromCart(item.id)}>Remove</RemoveButton>
+              <RemoveButton onClick={() => removeFromCart(item.id)}>X</RemoveButton>
             </CartItem>
           ))}
         </ul>

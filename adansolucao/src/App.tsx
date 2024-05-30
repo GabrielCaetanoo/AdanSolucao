@@ -9,11 +9,11 @@ import Home from '../src/home';
 
 //O estado isCartOpen no App.tsx controla a visibilidade do carrinho, e a função toggleCart é passada para o Header para ser chamada quando o botão do carrinho é clicado
 
-type ProductsProps = {
+type ProdutosProps = {
   addToCart: (item: { id: number; name: string; price: number }) => void;
 };
 
-const Products: React.FC<ProductsProps> = ({ addToCart }) => (
+const Produtos: React.FC<ProdutosProps> = ({ addToCart }) => (
   <div color='white'>
     
     <ItemList addToCart={addToCart} />
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         {isCartOpen && <Cart items={cartItems} removeFromCart={removeFromCart} toggleCart={toggleCart} />}
         <Routes>
           <Route path="/checkout" element={<Checkout cartItems={cartItems} />} />
-          <Route path="/products" element={<Products addToCart={addToCart} />} />
+          <Route path="/produtos" element={<Produtos addToCart={addToCart} />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Container>

@@ -10,7 +10,7 @@ type HeaderProps = {
       <HeaderContainer>
         <nav>
           <NavLinkStyled to="/">Inicial</NavLinkStyled>
-          <NavLinkStyled to="/products">Produtos</NavLinkStyled>
+          <NavLinkStyled to="/produtos">Produtos</NavLinkStyled>
           <button onClick={toggleCart}>Carrinho</button>
         </nav>
       </HeaderContainer>
