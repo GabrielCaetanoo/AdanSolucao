@@ -53,47 +53,43 @@ Para instalar e executar este projeto localmente, siga as etapas abaixo:
    Copiar código
    npm install
 
- **Inicie o servidor de desenvolvimento: **
 
-``bash
-   Copiar código
-   npm run dev
 
 O aplicativo estará disponível em http://localhost:3000.
 
 Deploy
 
-##O projeto está implantado em Vercel e pode ser acessado no seguinte link:
+## O projeto está implantado em Vercel e pode ser acessado no seguinte link:
 
 https://adan-solucao.vercel.app
 
-##Para realizar o deploy, siga os passos abaixo:
+## Para realizar o deploy, siga os passos abaixo:
 
-##Build do projeto:
+## Build do projeto:
 
 ``bash
     Copiar código
     npm run build
     
-##Deploy para Vercel:
+## Deploy para Vercel:
 
-##Use o comando vercel na linha de comando ou conecte o repositório ao Vercel para deploy automático.
+## Use o comando vercel na linha de comando ou conecte o repositório ao Vercel para deploy automático.
 
-##Uso Componentes Principais
+## Uso Componentes Principais
 
 App.tsx: Componente principal que encapsula a aplicação.
 components/: Contém componentes reutilizáveis como botões, cabeçalhos, etc.
 pages/: Contém componentes de página como Home, About, Projects, e Contact.
 styles/: Contém arquivos de estilização utilizando styled-components
 
-##Estilos
+## Estilos
 Os estilos são aplicados utilizando a biblioteca styled-components para garantir uma interface visualmente atraente e consistente.
 
-##Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-##Fork o projeto
+## Fork o projeto
 
 Crie sua feature branch (git checkout -b feature/AmazingFeature)
 Commit suas mudanças (git commit -m 'Add some AmazingFeature')
@@ -101,6 +97,6 @@ Push para a branch (git push origin feature/AmazingFeature)
 Abra um Pull Request
 
 
-##Licença
+## Licença
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
 
