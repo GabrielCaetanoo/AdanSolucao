@@ -73,7 +73,7 @@ https://adan-solucao.vercel.app
     
 ## Deploy para Vercel:
 
-## Use o comando vercel na linha de comando ou conecte o repositório ao Vercel para deploy automático.
+Use o comando vercel na linha de comando ou conecte o repositório ao Vercel para deploy automático.
 
 ## Uso Componentes Principais
 
