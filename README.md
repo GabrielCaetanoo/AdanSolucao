@@ -47,7 +47,7 @@ Para instalar e executar este projeto localmente, siga as etapas abaixo:
    git clone https://github.com/seu-usuario/meu-portifolio.git
    cd meu-portifolio
 
- **Instale as dependências: **
+ **Instale as dependências:**
 
   ``bash
    Copiar código
